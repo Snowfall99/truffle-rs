@@ -1,0 +1,11 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h3>Do you want to learn more about distributed system?</h3>
+    <ul>
+        {% for bft in bfts %}
+            <a href="http://localhost:8000/bfts/{{bft.name}}">{{ bft.name }}</a><br>
+        {% endfor %}
+    </ul>
+{% endblock content %}
