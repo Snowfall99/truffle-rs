@@ -1,11 +1,13 @@
 [package]
-name = "truffle-rocket"
+name = "truffle_rocket"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+diesel = { version = "1.4.4", features = ["mysql"] }
+dotenv = "0.15.0"
 rocket = "0.4.10"
 serde = "1.0"
 serde_derive = "1.0"
@@ -14,4 +16,7 @@ serde_json = "1.0"
 [dependencies.rocket_contrib]
 version = "0.4.10"
 default-features = false
-features = ["tera_templates"]
+features = ["tera_templates", "json"]
+
+[[bin]]
+name = "truffle_rs"

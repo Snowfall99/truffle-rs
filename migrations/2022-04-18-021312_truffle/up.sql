@@ -1,0 +1,6 @@
+-- Your SQL goes here
+CREATE TABLE bfts (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  link TEXT NOT NULL
+);
